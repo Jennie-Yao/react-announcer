@@ -1,0 +1,58 @@
+{
+  "name": "react-a11y-announcer",
+  "version": "2.1.0",
+  "description": "",
+  "main": "dist/Announcer.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "rimraf dist && mkdirp dist && babel src -d dist",
+    "test": "jest",
+    "test:updateSnapshot": "jest --updateSnapshot",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkcompany/react-a11y-announcer.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkcompany/react-a11y-announcer/issues"
+  },
+  "homepage": "https://github.com/thinkcompany/react-a11y-announcer#readme",
+  "peerDependencies": {
+    "prop-types": "15.x",
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^26.0.1",
+    "mkdirp": "^1.0.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ]
+  }
+}
